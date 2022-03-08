@@ -77,7 +77,7 @@ export default {
       }
       socket.emit("users");
       isLog.value=true;
-      router.push({name:"productdetail-router",params:{}})
+      router.push({name:"chat-router",params:{}})
     }
     return {
       error,isPending,signIn,
