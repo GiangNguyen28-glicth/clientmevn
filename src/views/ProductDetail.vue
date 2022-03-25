@@ -249,7 +249,7 @@ input::-webkit-inner-spin-button {
   margin-top: 182px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  animation: warning 0.5s linear forwards;
+  animation: warning 0.5s ease forwards;
 }
 .icon-warning {
   background-color: yellow;
@@ -299,7 +299,7 @@ p {
 }
 @keyframes warning {
   to{
-    transform: translateX(-10px);
+    transform: translateX(100%);
   }
 }
 </style>

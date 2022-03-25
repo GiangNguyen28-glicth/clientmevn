@@ -1,7 +1,7 @@
 import Axios from "axios";
 
 const axiosinstance = Axios.create();
-axiosinstance.defaults.baseURL = "https://servermevn.vercel.app/api/v1";
+axiosinstance.defaults.baseURL = "https://servermevn.herokuapp.com/api/v1";
 axiosinstance.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('at-token');
 axiosinstance.interceptors.response.use(
     (response) => {
